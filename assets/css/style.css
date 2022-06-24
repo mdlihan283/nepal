@@ -1,0 +1,580 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+section {
+  padding: 100px 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Rubik, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+header#header {
+  background: transparent;
+  padding: 20px 0px;
+  transition: all 0.3s ease 0s;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+.headerActive {
+  background: crimson !important;
+  padding: 15px 0px !important;
+}
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 0px 15px;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+ul#mainMenuItem {
+  display: flex;
+}
+
+.mobileMenu i {
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.showMenu {
+  left: 0px !important;
+}
+
+.iconHide {
+  display: none;
+}
+
+ul#mainMenuItem li a {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  display: block;
+  padding: 0px 17px;
+  transition: all 0.3s ease 0s;
+  font-family: Rubik;
+  font-weight: 500;
+}
+ul#mainMenuItem li a:hover {
+  cursor: pointer;
+  color: crimson;
+}
+.logo h2 {
+  font-size: 35px;
+}
+.logoH2Active {
+  color: rgb(255, 255, 255) !important;
+}
+.logo h2 a {
+  color: rgb(255, 255, 255);
+}
+.logo h2 a span {
+  color: crimson;
+  transition: all 0.3s ease 0s;
+}
+#slider {
+  padding: 0px;
+  background-image: url("../img/slide/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.sliderWrapper {
+  overflow: hidden;
+}
+.singleSlide {
+  margin-top: 200px;
+  color: rgb(255, 255, 255);
+}
+.singleSlide h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Ubuntu, sans-serif;
+}
+.singleSlide h1 {
+  font-size: 70px;
+  margin: 10px 0px;
+}
+.singleSlide h2 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: Ubuntu, sans-serif;
+}
+#typing,
+#aboutTyping {
+  color: crimson;
+  position: relative;
+  margin-left: 10px;
+}
+#typing::after {
+  content: "";
+  position: absolute;
+  top: 9%;
+  right: -5px;
+  border-right: 2px solid crimson;
+  display: block;
+  width: 100px;
+  height: 100%;
+  animation: 0.6s ease 0s infinite normal none running blink;
+}
+#aboutTyping::after {
+  content: "";
+  position: absolute;
+  top: 9%;
+  right: -5px;
+  border-right: 2px solid crimson;
+  display: block;
+  width: 100px;
+  height: 100%;
+  animation: 0.6s ease 0s infinite normal none running blink;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+button#slideBtn {
+  background: crimson;
+  padding: 12px 40px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-weight: 400;
+  margin-top: 40px;
+  transition: all 0.3s ease 0s;
+}
+button#slideBtn:hover {
+  background: transparent;
+  color: crimson;
+  cursor: pointer;
+}
+#about {
+  background-color: rgb(242, 242, 242);
+}
+.secTitle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.secTitle::before {
+  content: "";
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 3px;
+  background: rgb(17, 17, 17);
+  display: block;
+}
+.secTitle::after {
+  content: "who i am";
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  background-color: rgb(242, 242, 242);
+  transform: translateX(-50%);
+  display: block;
+  height: 22px;
+  font-size: 18px;
+  color: crimson;
+  font-weight: 600;
+  text-align: center;
+  font-family: Ubuntu;
+  width: 120px !important;
+}
+.secTitle h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Ubuntu, sans-serif;
+  margin-bottom: 80px;
+}
+.aboutWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leftAboutImg {
+  width: 45%;
+}
+.leftAboutImg img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.rightAboutContent {
+  width: 55%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+.rightAboutContent h2 {
+  font-size: 28px;
+  font-family: Ubuntu;
+  margin-bottom: 15px;
+}
+.rightAboutContent h2 span {
+  color: crimson;
+}
+.rightAboutContent p {
+  font-size: 17px;
+  color: rgb(17, 17, 17);
+  line-height: 30px;
+}
+#service {
+  background: rgb(17, 17, 17);
+}
+#service .secTitle h2 {
+  color: rgb(255, 255, 255);
+}
+#service .secTitle::before {
+  background-color: rgb(255, 255, 255);
+}
+#service .secTitle::after {
+  content: "what i provide";
+  background-color: rgb(17, 17, 17);
+  width: 140px !important;
+}
+.serviceWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.singleService {
+  width: 31%;
+  background: rgb(34, 34, 34);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+.box {
+  padding: 35px;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+}
+.singleService:hover .box {
+  background: crimson;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.singleService .sIcon {
+  font-size: 50px;
+  color: crimson;
+}
+.singleService:hover .sIcon {
+  color: rgb(255, 255, 255) !important;
+}
+.singleService .sTitle h2 {
+  font-size: 27px;
+  font-family: Rubik, sans-serif;
+  margin: 10px 0px;
+  font-weight: 400;
+}
+.singleService .sDesc p {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+}
+#skill {
+  background-color: rgb(242, 242, 242);
+}
+#skill .secTitle::after {
+  content: "what i know";
+  width: 100px;
+}
+.skillWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.skillLeftContent {
+  width: 50%;
+}
+.skillRightBar {
+  width: 46%;
+}
+.skillLeftContent h3 {
+  font-size: 24px;
+  font-family: Ubuntu;
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.skillLeftContent p {
+  line-height: 25px;
+  font-size: 17px;
+  word-spacing: 2px;
+}
+.singleBar {
+  width: 100%;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+}
+.topBar span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.singleBar {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+}
+.topBar span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.progressBar {
+  position: relative;
+  background: rgb(153, 153, 153);
+  display: block;
+  top: 8px;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+}
+.progressDone {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  background: crimson;
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+}
+.css {
+  width: 60% !important;
+}
+.js {
+  width: 80% !important;
+}
+.php {
+  width: 50% !important;
+}
+.mysql {
+  width: 70% !important;
+}
+#team {
+  background: rgb(17, 17, 17);
+}
+#team .secTitle h2 {
+  color: rgb(255, 255, 255);
+}
+#team .secTitle::before {
+  background-color: rgb(255, 255, 255);
+}
+#team .secTitle::after {
+  content: "what i provide";
+  background-color: rgb(17, 17, 17);
+  width: 140px !important;
+}
+.teamWrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.singleTeam {
+  width: 31%;
+  background: rgb(34, 34, 34);
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+}
+.Tbox {
+  padding: 30px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+}
+.TImg img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease 0s;
+}
+.TTitle h2 {
+  margin: 10px 0px;
+  font-family: Rubik;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.TDesc p {
+  line-height: 25px;
+  font-family: Ubuntu;
+  font-weight: 400;
+}
+.singleTeam:hover .Tbox {
+  background: crimson;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.singleTeam:hover .Tbox .TImg img {
+  border-color: rgb(255, 255, 255);
+}
+#contact {
+  background: rgb(242, 242, 242);
+}
+#contact .secTitle::after {
+  content: "get in touch";
+}
+.contactWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.CLeftContent {
+  width: 48%;
+}
+.FRightContent {
+  width: 48%;
+}
+.CLeftContent h2 {
+  font-size: 23px;
+  font-family: Ubuntu;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: rgb(17, 17, 17);
+}
+.CLeftContent p {
+  font-size: 18px;
+  font-family: Rubik;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.contactSingleItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 200px;
+}
+.contantLeftIcon i {
+  font-size: 25px;
+  color: crimson;
+  margin-top: 7px;
+}
+.contantLeftIcon {
+  width: 40px;
+}
+.contantRithtContent {
+  width: 154px;
+  color: rgb(34, 34, 34);
+}
+.contantRithtContent h3 {
+  font-family: Ubuntu;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.contantRithtContent h4 {
+  font-size: 16px;
+  font-family: Ubuntu;
+  font-weight: 300;
+  color: #333;
+}
+.FRightContent h2 {
+  font-size: 25px;
+  font-family: Ubuntu;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.topInput {
+  display: flex;
+  justify-content: space-between;
+}
+.topInput input {
+  width: 49%;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(153, 153, 153);
+}
+input,
+textarea::placeholder {
+  font-size: 16px;
+  font-family: Ubuntu;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+input#subject {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(153, 153, 153);
+}
+textarea#message {
+  width: 100%;
+  border: 1px solid rgb(153, 153, 153);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 120px;
+}
+#sendMessage {
+  background: crimson;
+  padding: 10px 20px;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-weight: 400;
+  transition: all 0.3s ease 0s;
+}
+#sendMessage:hover {
+  background: transparent;
+  border-color: crimson;
+  color: crimson;
+  cursor: pointer;
+}
+footer#footer {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.footerWrapper p span {
+  color: crimson;
+  font-weight: 500;
+}

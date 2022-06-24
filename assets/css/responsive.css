@@ -1,0 +1,107 @@
+/* tablate responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .mobileMenu i {
+    display: block !important;
+    padding-right: 20px;
+  }
+  .menu {
+    position: fixed;
+    top: 0px;
+    left: -105%;
+    background: #1b1b1b;
+    height: 100vh;
+    width: 80%;
+    padding-top: 60px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  ul#mainMenuItem {
+    display: unset;
+  }
+
+  ul#mainMenuItem li a {
+    text-align: center;
+    font-size: 18px;
+    padding: 18px 0px;
+  }
+  .times {
+    top: 25px;
+    right: 10px;
+    position: absolute;
+  }
+  .aboutWrapper {
+    flex-direction: column;
+  }
+
+  .leftAboutImg {
+    margin: 0px auto 40px auto;
+  }
+
+  .rightAboutContent {
+    width: 100%;
+  }
+  .singleService {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .skillWrapper {
+    flex-direction: column;
+  }
+
+  .skillLeftContent {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .skillRightBar {
+    width: 100%;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+  }
+
+  .CLeftContent {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .FRightContent {
+    width: 100%;
+  }
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+  .singleSlide h3 {
+    font-size: 25px;
+  }
+
+  .singleSlide h1 {
+    font-size: 55px;
+  }
+
+  .singleSlide h2 {
+    font-size: 30px;
+  }
+  .leftAboutImg {
+    width: 69%;
+  }
+
+  .singleService {
+    width: 100%;
+  }
+
+  .singleTeam {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
